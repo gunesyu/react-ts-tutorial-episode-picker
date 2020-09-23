@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.5d747303.chunk.css",
-    "main.js": "/static/js/main.bd39e795.chunk.js",
-    "main.js.map": "/static/js/main.bd39e795.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.9fe2a32d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.9fe2a32d.js.map",
-    "static/js/2.1a9dd3cb.chunk.js": "/static/js/2.1a9dd3cb.chunk.js",
-    "static/js/2.1a9dd3cb.chunk.js.map": "/static/js/2.1a9dd3cb.chunk.js.map",
-    "static/js/3.c3566920.chunk.js": "/static/js/3.c3566920.chunk.js",
-    "static/js/3.c3566920.chunk.js.map": "/static/js/3.c3566920.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.05899822b9a8eff5776535fbac4a7e8f.js": "/precache-manifest.05899822b9a8eff5776535fbac4a7e8f.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.5d747303.chunk.css.map": "/static/css/main.5d747303.chunk.css.map",
-    "static/js/2.1a9dd3cb.chunk.js.LICENSE.txt": "/static/js/2.1a9dd3cb.chunk.js.LICENSE.txt"
+    "main.css": "/react-ts-tutorial-episode-picker/static/css/main.5d747303.chunk.css",
+    "main.js": "/react-ts-tutorial-episode-picker/static/js/main.67da0e24.chunk.js",
+    "main.js.map": "/react-ts-tutorial-episode-picker/static/js/main.67da0e24.chunk.js.map",
+    "runtime-main.js": "/react-ts-tutorial-episode-picker/static/js/runtime-main.7f9f8502.js",
+    "runtime-main.js.map": "/react-ts-tutorial-episode-picker/static/js/runtime-main.7f9f8502.js.map",
+    "static/js/2.2d21c52a.chunk.js": "/react-ts-tutorial-episode-picker/static/js/2.2d21c52a.chunk.js",
+    "static/js/2.2d21c52a.chunk.js.map": "/react-ts-tutorial-episode-picker/static/js/2.2d21c52a.chunk.js.map",
+    "static/js/3.3a2f7caf.chunk.js": "/react-ts-tutorial-episode-picker/static/js/3.3a2f7caf.chunk.js",
+    "static/js/3.3a2f7caf.chunk.js.map": "/react-ts-tutorial-episode-picker/static/js/3.3a2f7caf.chunk.js.map",
+    "index.html": "/react-ts-tutorial-episode-picker/index.html",
+    "precache-manifest.9247eabaa3707f59da9f6d4ffefeed7a.js": "/react-ts-tutorial-episode-picker/precache-manifest.9247eabaa3707f59da9f6d4ffefeed7a.js",
+    "service-worker.js": "/react-ts-tutorial-episode-picker/service-worker.js",
+    "static/css/main.5d747303.chunk.css.map": "/react-ts-tutorial-episode-picker/static/css/main.5d747303.chunk.css.map",
+    "static/js/2.2d21c52a.chunk.js.LICENSE.txt": "/react-ts-tutorial-episode-picker/static/js/2.2d21c52a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9fe2a32d.js",
-    "static/js/2.1a9dd3cb.chunk.js",
+    "static/js/runtime-main.7f9f8502.js",
+    "static/js/2.2d21c52a.chunk.js",
     "static/css/main.5d747303.chunk.css",
-    "static/js/main.bd39e795.chunk.js"
+    "static/js/main.67da0e24.chunk.js"
   ]
 }
