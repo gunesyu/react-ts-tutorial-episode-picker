@@ -1,12 +1,14 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, lazy, Suspense } from 'react';
 
 import { Store, endpoint } from './Store/Store'
 import * as actions from './Store/actions'
 
 import Header from './Components/Header'
-import EpisodeList from './Components/EpisodeList'
+import Loader from './Components/Loader'
 
 import './App.css';
+
+const EpisodeList = lazy(() => import('./Components/EpisodeList'))
 
 function App(): JSX.Element {
   const { state, dispatch } = useContext(Store)
@@ -30,7 +32,9 @@ function App(): JSX.Element {
     <>
       <Header />
       <section>
-        <EpisodeList episodes={state.episodes} favorites={state.favorites} />
+        <Suspense fallback={<Loader />}>
+          <EpisodeList episodes={state.episodes} favorites={state.favorites} />
+        </Suspense>
       </section>
     </>
   );
