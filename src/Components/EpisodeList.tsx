@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function EpisodeList(props: any): JSX.Element {
-  const { episodes, favorites } = props;
+  const { episodes, favorites, toggleFav } = props;
 
   let currentListingSeason: number = 0;
 
@@ -10,6 +10,12 @@ export default function EpisodeList(props: any): JSX.Element {
     if (isSepShown) {
       currentListingSeason = episode.season;
     }
+
+    let isEpisodeFav: boolean = favorites.find(
+      (fav: any) => fav.id === episode.id
+    )
+      ? true
+      : false;
 
     return (
       <>
@@ -35,6 +41,18 @@ export default function EpisodeList(props: any): JSX.Element {
             className="episode-summary"
             dangerouslySetInnerHTML={{ __html: episode.summary }}
           ></div>
+          <div className="episode-actions">
+            <a href={episode.url} target="blank">
+              Watch
+            </a>
+            <button
+              type="button"
+              onClick={() => toggleFav(episode)}
+              className={"favorite-btn favorite-" + isEpisodeFav}
+            >
+              {isEpisodeFav ? "Remove Favorite" : "Add to Favorites"}
+            </button>
+          </div>
         </div>
       </>
     );

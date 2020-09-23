@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, lazy, Suspense } from 'react';
 
 import { Store, endpoint } from './Store/Store'
+import { IAction } from './interfaces'
 import * as actions from './Store/actions'
 
 import Header from './Components/Header'
@@ -26,14 +27,24 @@ function App(): JSX.Element {
     })
   }
 
-  console.log(state)
+  const toggleFavorite = (episode: any): IAction => {
+    const actionType = state.favorites.includes(episode) ? actions.REMOVE_FAVORITE : actions.ADD_FAVORITE;
+    return dispatch({
+      type: actionType,
+      payload: episode
+    })
+  }
+
+  const changeList = (): IAction => dispatch({
+    type: actions.CHANGE_LIST_TYPE
+  })
 
   return (
     <>
-      <Header />
+      <Header count={state.favorites.length} clickHandler={changeList} />
       <section>
         <Suspense fallback={<Loader />}>
-          <EpisodeList episodes={state.episodes} favorites={state.favorites} />
+          <EpisodeList episodes={state[state.list]} favorites={state.favorites} toggleFav={toggleFavorite} />
         </Suspense>
       </section>
     </>

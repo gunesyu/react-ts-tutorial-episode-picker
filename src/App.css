@@ -20,6 +20,12 @@ header {
   margin-bottom: 25px;
   text-align: center;
 }
+header span {
+  cursor: pointer;
+}
+header span:hover {
+  text-decoration: underline;
+}
 
 section {
   display: flex;
@@ -65,6 +71,34 @@ section {
   display: block;
   width: 100%;
   padding-left: 10px;
+}
+
+.episode-actions {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.episode-actions a,
+.episode-actions button {
+  color: #f0f0f0;
+  background-color: #252525;
+  padding: 6px 12px;
+  text-decoration: none !important;
+  border-radius: 5px;
+  margin: 0 5px;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  font-size: 1em;
+}
+.episode-actions .favorite-btn {
+  background-color: #f0f0f0;
+  color: #252525;
+}
+.episode-actions .favorite-btn.favorite-true {
+  background-color: #a70000;
+  color: #f2f2f2;
 }
 
 @media screen and (max-width: 1079px) {

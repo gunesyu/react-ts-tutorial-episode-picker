@@ -4,7 +4,8 @@ import { IState } from '../interfaces'
 
 export const initialState: IState = {
     episodes: [],
-    favorites: []
+    favorites: [],
+    list: 'episodes'
 }
 
 export const endpoint: string = 'https://api.tvmaze.com/singlesearch/shows?q=breaking-bad&embed=episodes'
