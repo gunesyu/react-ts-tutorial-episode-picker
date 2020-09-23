@@ -4,6 +4,7 @@ import { Store, endpoint } from './Store/Store'
 import * as actions from './Store/actions'
 
 import Header from './Components/Header'
+import EpisodeList from './Components/EpisodeList'
 
 import './App.css';
 
@@ -29,7 +30,7 @@ function App(): JSX.Element {
     <>
       <Header />
       <section>
-        APP
+        <EpisodeList episodes={state.episodes} favorites={state.favorites} />
       </section>
     </>
   );

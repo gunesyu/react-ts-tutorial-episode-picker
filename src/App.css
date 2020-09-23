@@ -20,3 +20,58 @@ header {
   margin-bottom: 25px;
   text-align: center;
 }
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+.episode-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 330px;
+  margin: 10px 10px 25px 10px;
+  background-color: #585858;
+  border-radius: 6px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: default;
+  transition: all .25s;
+}
+.episode-wrapper:hover {
+  background-color: #000000;
+}
+.episode-datetime {
+  font-style: italic;
+  font-weight: 300;
+  font-size: .9em;
+}
+.episode-cover {
+  margin: 6px 0 12px 0;
+  border-radius: 5px;
+  width: 100%;
+}
+.episode-summary {
+  font-style: italic;
+  font-weight: 300;
+  margin: 6px 0 12px 0;
+  flex-grow: 1;
+  font-size: .9em;
+}
+
+.separator {
+  display: block;
+  width: 100%;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 1079px) {
+  section {
+    justify-content: center;
+  }
+  .separator {
+    text-align: center;
+  }
+}
