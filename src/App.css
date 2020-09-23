@@ -2,3 +2,21 @@ body {
   background-color: #202020;
   color: #f2f2f2;
 }
+h1,h2,h3,h4,h5,h6 {
+  margin: 5px 0;
+}
+h1 {
+  font-size: 26px;
+}
+h2 {
+  font-size: 16px;
+}
+p {
+  margin: 0 0 5px 0;
+}
+
+header {
+  padding: 25px 25px 12px 25px;
+  margin-bottom: 25px;
+  text-align: center;
+}
