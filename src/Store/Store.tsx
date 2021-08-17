@@ -8,6 +8,6 @@ export const initialState: IState = {
     list: 'episodes'
 }
 
-export const endpoint: string = 'https://api.tvmaze.com/singlesearch/shows?q=breaking-bad&embed=episodes'
+export const endpoint: string = 'https://api.tvmaze.com/singlesearch/shows?q=breaking bad&embed=episodes'
 
 export const Store = createContext<IState | any>(initialState);
